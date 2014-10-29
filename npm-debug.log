@@ -1,168 +1,221 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'coffee-script', '-g' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'coffee', '-', 'g' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 verbose cache add [ 'coffee-script', null ]
-5 verbose cache add name=undefined spec="coffee-script" args=["coffee-script",null]
-6 verbose parsed url { protocol: null,
-6 verbose parsed url   slashes: null,
-6 verbose parsed url   auth: null,
-6 verbose parsed url   host: null,
-6 verbose parsed url   port: null,
-6 verbose parsed url   hostname: null,
-6 verbose parsed url   hash: null,
-6 verbose parsed url   search: null,
-6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'coffee-script',
-6 verbose parsed url   path: 'coffee-script',
-6 verbose parsed url   href: 'coffee-script' }
-7 silly lockFile ab358269-coffee-script coffee-script
-8 verbose lock coffee-script /Users/timscully/.npm/ab358269-coffee-script.lock
-9 silly lockFile ab358269-coffee-script coffee-script
-10 silly lockFile ab358269-coffee-script coffee-script
-11 verbose addNamed [ 'coffee-script', '' ]
-12 verbose addNamed [ null, '*' ]
-13 silly lockFile 53951495-coffee-script coffee-script@
-14 verbose lock coffee-script@ /Users/timscully/.npm/53951495-coffee-script.lock
-15 silly addNameRange { name: 'coffee-script', range: '*', hasData: false }
-16 verbose request where is /coffee-script
-17 verbose request registry https://registry.npmjs.org/
-18 verbose request id 05d6aeda89dc383d
-19 verbose url raw /coffee-script
-20 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
-21 verbose url resolved https://registry.npmjs.org/coffee-script
-22 verbose request where is https://registry.npmjs.org/coffee-script
-23 info trying registry request attempt 1 at 11:13:10
-24 verbose etag "CK60GKFBPIB3RXA1IRES83CJS"
-25 http GET https://registry.npmjs.org/coffee-script
-26 http 304 https://registry.npmjs.org/coffee-script
-27 silly registry.get cb [ 304,
-27 silly registry.get   { date: 'Wed, 29 Oct 2014 11:13:10 GMT',
-27 silly registry.get     server: 'Apache',
-27 silly registry.get     via: '1.1 varnish',
-27 silly registry.get     'last-modified': 'Wed, 29 Oct 2014 11:13:10 GMT',
-27 silly registry.get     'cache-control': 'max-age=60',
-27 silly registry.get     etag: '"CK60GKFBPIB3RXA1IRES83CJS"',
-27 silly registry.get     age: '55',
-27 silly registry.get     'x-served-by': 'cache-lcy1131-LCY',
-27 silly registry.get     'x-cache': 'HIT',
-27 silly registry.get     'x-cache-hits': '1',
-27 silly registry.get     'x-timer': 'S1414581190.894505,VS0,VE0',
-27 silly registry.get     vary: 'Accept',
-27 silly registry.get     'content-length': '0',
-27 silly registry.get     'keep-alive': 'timeout=10, max=50',
-27 silly registry.get     connection: 'Keep-Alive' } ]
-28 verbose etag https://registry.npmjs.org/coffee-script from cache
-29 silly addNameRange number 2 { name: 'coffee-script', range: '*', hasData: true }
-30 silly addNameRange versions [ 'coffee-script',
-30 silly addNameRange   [ '0.7.0',
-30 silly addNameRange     '0.7.1',
-30 silly addNameRange     '0.7.2',
-30 silly addNameRange     '0.9.0',
-30 silly addNameRange     '0.9.1',
-30 silly addNameRange     '0.9.2',
-30 silly addNameRange     '0.9.3',
-30 silly addNameRange     '0.9.4',
-30 silly addNameRange     '0.9.5',
-30 silly addNameRange     '0.9.6',
-30 silly addNameRange     '1.0.0',
-30 silly addNameRange     '1.0.1',
-30 silly addNameRange     '1.1.0',
-30 silly addNameRange     '1.1.1',
-30 silly addNameRange     '1.1.2',
-30 silly addNameRange     '1.1.3',
-30 silly addNameRange     '1.2.0',
-30 silly addNameRange     '1.3.0',
-30 silly addNameRange     '1.3.1',
-30 silly addNameRange     '1.3.2',
-30 silly addNameRange     '1.3.3',
-30 silly addNameRange     '1.4.0',
-30 silly addNameRange     '1.5.0',
-30 silly addNameRange     '1.6.0',
-30 silly addNameRange     '1.6.1',
-30 silly addNameRange     '1.6.2',
-30 silly addNameRange     '1.6.3',
-30 silly addNameRange     '1.7.0',
-30 silly addNameRange     '1.7.1',
-30 silly addNameRange     '1.8.0' ] ]
-31 verbose addNamed [ 'coffee-script', '1.8.0' ]
-32 verbose addNamed [ '1.8.0', '1.8.0' ]
-33 silly lockFile d0d79082-coffee-script-1-8-0 coffee-script@1.8.0
-34 verbose lock coffee-script@1.8.0 /Users/timscully/.npm/d0d79082-coffee-script-1-8-0.lock
-35 silly lockFile d0d79082-coffee-script-1-8-0 coffee-script@1.8.0
-36 silly lockFile d0d79082-coffee-script-1-8-0 coffee-script@1.8.0
-37 silly lockFile 53951495-coffee-script coffee-script@
-38 silly lockFile 53951495-coffee-script coffee-script@
-39 silly resolved [ { name: 'coffee-script',
-39 silly resolved     description: 'Unfancy JavaScript',
-39 silly resolved     keywords: [ 'javascript', 'language', 'coffeescript', 'compiler' ],
-39 silly resolved     author: { name: 'Jeremy Ashkenas' },
-39 silly resolved     version: '1.8.0',
-39 silly resolved     license: 'MIT',
-39 silly resolved     engines: { node: '>=0.8.0' },
-39 silly resolved     directories: { lib: './lib/coffee-script' },
-39 silly resolved     main: './lib/coffee-script/coffee-script',
-39 silly resolved     bin: { coffee: './bin/coffee', cake: './bin/cake' },
-39 silly resolved     preferGlobal: true,
-39 silly resolved     scripts: { test: 'node ./bin/cake test' },
-39 silly resolved     homepage: 'http://coffeescript.org',
-39 silly resolved     bugs: { url: 'https://github.com/jashkenas/coffeescript/issues' },
-39 silly resolved     repository:
-39 silly resolved      { type: 'git',
-39 silly resolved        url: 'git://github.com/jashkenas/coffeescript.git' },
-39 silly resolved     devDependencies:
-39 silly resolved      { 'uglify-js': '~2.2',
-39 silly resolved        jison: '>=0.2.0',
-39 silly resolved        'highlight.js': '~8.0.0',
-39 silly resolved        underscore: '~1.5.2',
-39 silly resolved        docco: '~0.6.2' },
-39 silly resolved     dependencies: { mkdirp: '~0.3.5' },
-39 silly resolved     _id: 'coffee-script@1.8.0',
-39 silly resolved     dist:
-39 silly resolved      { shasum: '9c9f1d2b4a52a000ded15b659791703648263c1d',
-39 silly resolved        tarball: 'http://registry.npmjs.org/coffee-script/-/coffee-script-1.8.0.tgz' },
-39 silly resolved     _from: 'coffee-script@',
-39 silly resolved     _npmVersion: '1.3.21',
-39 silly resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
-39 silly resolved     maintainers: [ [Object], [Object] ],
-39 silly resolved     _shasum: '9c9f1d2b4a52a000ded15b659791703648263c1d',
-39 silly resolved     _resolved: 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.8.0.tgz',
-39 silly resolved     readme: 'ERROR: No README data found!' } ]
-40 info install coffee-script@1.8.0 into /usr/local/lib
-41 info installOne coffee-script@1.8.0
-42 verbose lib/node_modules/coffee-script unbuild
-43 verbose tar unpack /Users/timscully/.npm/coffee-script/1.8.0/package.tgz
-44 silly lockFile 865d9b08-l-lib-node-modules-coffee-script tar:///usr/local/lib/node_modules/coffee-script
-45 verbose lock tar:///usr/local/lib/node_modules/coffee-script /Users/timscully/.npm/865d9b08-l-lib-node-modules-coffee-script.lock
-46 silly lockFile 65294b40--coffee-script-1-8-0-package-tgz tar:///Users/timscully/.npm/coffee-script/1.8.0/package.tgz
-47 verbose lock tar:///Users/timscully/.npm/coffee-script/1.8.0/package.tgz /Users/timscully/.npm/65294b40--coffee-script-1-8-0-package-tgz.lock
-48 silly gunzTarPerm modes [ '755', '644' ]
-49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/coffee-script'
-49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/coffee-script']
-49 error   errno: 3,
-49 error   code: 'EACCES',
-49 error   path: '/usr/local/lib/node_modules/coffee-script',
-49 error   fstream_type: 'Directory',
-49 error   fstream_path: '/usr/local/lib/node_modules/coffee-script',
-49 error   fstream_class: 'DirWriter',
-49 error   fstream_stack:
-49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
-49 error      'Object.oncomplete (fs.js:107:15)' ] }
-50 error Please try running this command again as root/Administrator.
-51 error System Darwin 13.4.0
-52 error command "node" "/usr/local/bin/npm" "install" "coffee-script" "-g"
-53 error cwd /Users/timscully/projects_directory/Coffee_Buzz
-54 error node -v v0.10.32
-55 error npm -v 1.4.28
-56 error path /usr/local/lib/node_modules/coffee-script
-57 error fstream_path /usr/local/lib/node_modules/coffee-script
-58 error fstream_type Directory
-59 error fstream_class DirWriter
-60 error code EACCES
-61 error errno 3
-62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/coffee-script'
-63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
-63 error fstream_stack Object.oncomplete (fs.js:107:15)
-64 verbose exit [ 3, true ]
+4 warn package.json Coffee_Buzz@1.0.0 No description
+5 warn package.json Coffee_Buzz@1.0.0 No repository field.
+6 warn package.json Coffee_Buzz@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'coffee', null ]
+9 verbose cache add name=undefined spec="coffee" args=["coffee",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'coffee',
+10 verbose parsed url   path: 'coffee',
+10 verbose parsed url   href: 'coffee' }
+11 verbose cache add [ '-', null ]
+12 verbose cache add name=undefined spec="-" args=["-",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '-',
+13 verbose parsed url   path: '-',
+13 verbose parsed url   href: '-' }
+14 verbose cache add [ 'g', null ]
+15 verbose cache add name=undefined spec="g" args=["g",null]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: 'g',
+16 verbose parsed url   path: 'g',
+16 verbose parsed url   href: 'g' }
+17 silly lockFile 44213f9f-coffee coffee
+18 verbose lock coffee /Users/timscully/.npm/44213f9f-coffee.lock
+19 silly lockFile 3bc15c8a- -
+20 verbose lock - /Users/timscully/.npm/3bc15c8a-.lock
+21 silly lockFile 54fd1711-g g
+22 verbose lock g /Users/timscully/.npm/54fd1711-g.lock
+23 silly lockFile 44213f9f-coffee coffee
+24 silly lockFile 44213f9f-coffee coffee
+25 silly lockFile 3bc15c8a- -
+26 silly lockFile 3bc15c8a- -
+27 silly lockFile 54fd1711-g g
+28 silly lockFile 54fd1711-g g
+29 verbose addNamed [ 'coffee', '' ]
+30 verbose addNamed [ null, '*' ]
+31 silly lockFile 6f24caa5-coffee coffee@
+32 verbose lock coffee@ /Users/timscully/.npm/6f24caa5-coffee.lock
+33 verbose addNamed [ '-', '' ]
+34 verbose addNamed [ null, '*' ]
+35 silly lockFile c75fe0d4- -@
+36 verbose lock -@ /Users/timscully/.npm/c75fe0d4-.lock
+37 verbose addNamed [ 'g', '' ]
+38 verbose addNamed [ null, '*' ]
+39 silly lockFile 8b047e1f-g g@
+40 verbose lock g@ /Users/timscully/.npm/8b047e1f-g.lock
+41 silly addNameRange { name: 'coffee', range: '*', hasData: false }
+42 silly addNameRange { name: '-', range: '*', hasData: false }
+43 silly addNameRange { name: 'g', range: '*', hasData: false }
+44 verbose request where is /coffee
+45 verbose request registry https://registry.npmjs.org/
+46 verbose request id cbe34bb6005778ed
+47 verbose url raw /coffee
+48 verbose url resolving [ 'https://registry.npmjs.org/', './coffee' ]
+49 verbose url resolved https://registry.npmjs.org/coffee
+50 verbose request where is https://registry.npmjs.org/coffee
+51 info trying registry request attempt 1 at 11:35:43
+52 verbose etag "8HK6VD3QP6ZII7BKP117IC2VA"
+53 http GET https://registry.npmjs.org/coffee
+54 verbose request where is /-
+55 verbose request registry https://registry.npmjs.org/
+56 verbose url raw /-
+57 verbose url resolving [ 'https://registry.npmjs.org/', './-' ]
+58 verbose url resolved https://registry.npmjs.org/-
+59 verbose request where is https://registry.npmjs.org/-
+60 info trying registry request attempt 1 at 11:35:43
+61 http GET https://registry.npmjs.org/-
+62 verbose request where is /g
+63 verbose request registry https://registry.npmjs.org/
+64 verbose url raw /g
+65 verbose url resolving [ 'https://registry.npmjs.org/', './g' ]
+66 verbose url resolved https://registry.npmjs.org/g
+67 verbose request where is https://registry.npmjs.org/g
+68 info trying registry request attempt 1 at 11:35:43
+69 http GET https://registry.npmjs.org/g
+70 http 200 https://registry.npmjs.org/g
+71 silly registry.get cb [ 200,
+71 silly registry.get   { date: 'Wed, 29 Oct 2014 11:35:44 GMT',
+71 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+71 silly registry.get     etag: '"BPDBDMVZO9AUC0TBHJUEJ91BM"',
+71 silly registry.get     'content-type': 'application/json',
+71 silly registry.get     'cache-control': 'max-age=60',
+71 silly registry.get     'content-length': '3048',
+71 silly registry.get     'accept-ranges': 'bytes',
+71 silly registry.get     via: '1.1 varnish',
+71 silly registry.get     age: '0',
+71 silly registry.get     'x-served-by': 'cache-ams4132-AMS',
+71 silly registry.get     'x-cache': 'MISS',
+71 silly registry.get     'x-cache-hits': '0',
+71 silly registry.get     'x-timer': 'S1414582544.186924,VS0,VE90',
+71 silly registry.get     vary: 'Accept',
+71 silly registry.get     'keep-alive': 'timeout=10, max=50',
+71 silly registry.get     connection: 'Keep-Alive' } ]
+72 http 404 https://registry.npmjs.org/-
+73 verbose headers { date: 'Wed, 29 Oct 2014 11:35:44 GMT',
+73 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+73 verbose headers   'content-type': 'application/json',
+73 verbose headers   'cache-control': 'max-age=0',
+73 verbose headers   'content-length': '52',
+73 verbose headers   'accept-ranges': 'bytes',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   age: '0',
+73 verbose headers   'x-served-by': 'cache-ams4147-AMS',
+73 verbose headers   'x-cache': 'MISS',
+73 verbose headers   'x-cache-hits': '0',
+73 verbose headers   'x-timer': 'S1414582544.186342,VS0,VE93',
+73 verbose headers   'keep-alive': 'timeout=10, max=50',
+73 verbose headers   connection: 'Keep-Alive' }
+74 silly registry.get cb [ 404,
+74 silly registry.get   { date: 'Wed, 29 Oct 2014 11:35:44 GMT',
+74 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+74 silly registry.get     'content-type': 'application/json',
+74 silly registry.get     'cache-control': 'max-age=0',
+74 silly registry.get     'content-length': '52',
+74 silly registry.get     'accept-ranges': 'bytes',
+74 silly registry.get     via: '1.1 varnish',
+74 silly registry.get     age: '0',
+74 silly registry.get     'x-served-by': 'cache-ams4147-AMS',
+74 silly registry.get     'x-cache': 'MISS',
+74 silly registry.get     'x-cache-hits': '0',
+74 silly registry.get     'x-timer': 'S1414582544.186342,VS0,VE93',
+74 silly registry.get     'keep-alive': 'timeout=10, max=50',
+74 silly registry.get     connection: 'Keep-Alive' } ]
+75 silly lockFile c75fe0d4- -@
+76 silly lockFile c75fe0d4- -@
+77 silly addNameRange number 2 { name: 'g', range: '*', hasData: true }
+78 silly addNameRange versions [ 'g', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+79 verbose addNamed [ 'g', '1.0.2' ]
+80 verbose addNamed [ '1.0.2', '1.0.2' ]
+81 silly lockFile edaebc26-g-1-0-2 g@1.0.2
+82 verbose lock g@1.0.2 /Users/timscully/.npm/edaebc26-g-1-0-2.lock
+83 silly lockFile 5874d9b2-registry-npmjs-org-g-g-1-0-2-tgz https://registry.npmjs.org/g/-/g-1.0.2.tgz
+84 verbose lock https://registry.npmjs.org/g/-/g-1.0.2.tgz /Users/timscully/.npm/5874d9b2-registry-npmjs-org-g-g-1-0-2-tgz.lock
+85 verbose addRemoteTarball [ 'https://registry.npmjs.org/g/-/g-1.0.2.tgz',
+85 verbose addRemoteTarball   '7176efe99be840518ffd05aff9625d38d7bc3225' ]
+86 info retry fetch attempt 1 at 11:35:44
+87 verbose fetch to= /tmp/npm-12418-ZFQCUZyv/registry.npmjs.org/g/-/g-1.0.2.tgz
+88 http GET https://registry.npmjs.org/g/-/g-1.0.2.tgz
+89 http 200 https://registry.npmjs.org/g/-/g-1.0.2.tgz
+90 silly lockFile 5874d9b2-registry-npmjs-org-g-g-1-0-2-tgz https://registry.npmjs.org/g/-/g-1.0.2.tgz
+91 silly lockFile 5874d9b2-registry-npmjs-org-g-g-1-0-2-tgz https://registry.npmjs.org/g/-/g-1.0.2.tgz
+92 silly lockFile edaebc26-g-1-0-2 g@1.0.2
+93 silly lockFile edaebc26-g-1-0-2 g@1.0.2
+94 silly lockFile 8b047e1f-g g@
+95 silly lockFile 8b047e1f-g g@
+96 http 304 https://registry.npmjs.org/coffee
+97 silly registry.get cb [ 304,
+97 silly registry.get   { date: 'Wed, 29 Oct 2014 11:35:44 GMT',
+97 silly registry.get     server: 'Apache',
+97 silly registry.get     via: '1.1 varnish',
+97 silly registry.get     'last-modified': 'Wed, 29 Oct 2014 11:35:44 GMT',
+97 silly registry.get     'cache-control': 'max-age=60',
+97 silly registry.get     etag: '"8HK6VD3QP6ZII7BKP117IC2VA"',
+97 silly registry.get     age: '0',
+97 silly registry.get     'x-served-by': 'cache-ams4146-AMS',
+97 silly registry.get     'x-cache': 'MISS',
+97 silly registry.get     'x-cache-hits': '0',
+97 silly registry.get     'x-timer': 'S1414582544.188620,VS0,VE653',
+97 silly registry.get     vary: 'Accept',
+97 silly registry.get     'content-length': '0',
+97 silly registry.get     'keep-alive': 'timeout=10, max=50',
+97 silly registry.get     connection: 'Keep-Alive' } ]
+98 verbose etag https://registry.npmjs.org/coffee from cache
+99 silly addNameRange number 2 { name: 'coffee', range: '*', hasData: true }
+100 silly addNameRange versions [ 'coffee', [ '0.0.1' ] ]
+101 verbose addNamed [ 'coffee', '0.0.1' ]
+102 verbose addNamed [ '0.0.1', '0.0.1' ]
+103 silly lockFile b90d6b48-coffee-0-0-1 coffee@0.0.1
+104 verbose lock coffee@0.0.1 /Users/timscully/.npm/b90d6b48-coffee-0-0-1.lock
+105 silly lockFile b90d6b48-coffee-0-0-1 coffee@0.0.1
+106 silly lockFile b90d6b48-coffee-0-0-1 coffee@0.0.1
+107 silly lockFile 6f24caa5-coffee coffee@
+108 silly lockFile 6f24caa5-coffee coffee@
+109 error Error: not_found document not found: -
+109 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+109 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+109 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+109 error     at Request.emit (events.js:98:17)
+109 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+109 error     at Request.emit (events.js:117:20)
+109 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+109 error     at IncomingMessage.emit (events.js:117:20)
+109 error     at _stream_readable.js:943:16
+109 error     at process._tickCallback (node.js:419:13)
+110 error If you need help, you may report this *entire* log,
+110 error including the npm and node versions, at:
+110 error     <http://github.com/npm/npm/issues>
+111 error System Darwin 13.4.0
+112 error command "node" "/usr/local/bin/npm" "install" "coffee" "-" "g"
+113 error cwd /Users/timscully/projects_directory/Coffee_Buzz
+114 error node -v v0.10.32
+115 error npm -v 1.4.28
+116 verbose exit [ 1, true ]
