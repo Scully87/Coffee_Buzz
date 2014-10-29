@@ -16,6 +16,7 @@ class Fizzbuzz
 			"Coffee"
 		else if @isDivisibleByFive(number)
 			"Buzz"
+		else number
 		
 	isDivisibleBy: (number, divisor) ->
 		number % divisor == 0
