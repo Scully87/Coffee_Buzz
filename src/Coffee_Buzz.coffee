@@ -1,5 +1,11 @@
-isDivisibleByThree = (number) ->
-	number % 3 == 0
+class Fizzbuzz
+
+	isDivisibleByThree: (number) ->
+		number % 3 == 0
+
+	isDivisibleByFive: () ->
+		true
 
 
-module.exports = isDivisibleByThree
+
+module.exports = Fizzbuzz
