@@ -30,7 +30,10 @@ describe 'Coffeebuzz', ->
 	describe 'whilst playing, says', ->
 
 		it '"Coffee" if a number is divisible Three', ->
-			expect(coffeebuzz.says(3)).to.eql "Coffee"
+			expect(coffeebuzz.says(3)).to.equal "Coffee"
 
 		it '"Buzz" if a number is divisible by five', ->
-			expect(coffeebuzz.says(5)).to.eql "Buzz"
+			expect(coffeebuzz.says(5)).to.equal "Buzz"
+
+		it '"CoffeeBuzz" if a number is divisible by Fifteen', ->
+			expect(coffeebuzz.says(15)).to.equal "CoffeeBuzz"

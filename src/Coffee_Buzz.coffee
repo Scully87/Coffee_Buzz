@@ -9,9 +9,12 @@ class Fizzbuzz
 	isDivisibleByFifteen: (number) ->
 		@isDivisibleBy(number, 15)
 
-	says: ->
-		"Coffee"
-
+	says: (number) ->
+		if @isDivisibleByThree(number)
+			"Coffee"
+		else
+			"Buzz"
+		
 	isDivisibleBy: (number, divisor) ->
 		number % divisor == 0
 
