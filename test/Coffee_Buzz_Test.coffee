@@ -26,3 +26,8 @@ describe 'Coffeebuzz', ->
 
 		it 'Fifteen', ->
 			expect(coffeebuzz.isDivisibleByFifteen(1)).to.be.false
+
+	describe 'whilst playing, says', ->
+
+		it '"Coffee" if a number is divisible Three', ->
+			expect(coffeebuzz.says(3)).to.eql "Coffee"
