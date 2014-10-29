@@ -31,3 +31,6 @@ describe 'Coffeebuzz', ->
 
 		it '"Coffee" if a number is divisible Three', ->
 			expect(coffeebuzz.says(3)).to.eql "Coffee"
+
+		it '"Buzz" if a number is divisible by five', ->
+			expect(coffeebuzz.says(5)).to.eql "Buzz"
