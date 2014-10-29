@@ -9,6 +9,9 @@ describe 'Coffeebuzz', ->
 		it 'Three', ->
 			expect(isDivisibleByThree(3)).to.be.true
 
+		it 'Five', ->
+			expect(isDivisibleByFive(5)).to.be.true
+
 	describe 'knows when a number is NOT divisible by', ->
 
 		it 'Three', ->
