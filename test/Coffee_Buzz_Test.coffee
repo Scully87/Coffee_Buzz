@@ -37,3 +37,6 @@ describe 'Coffeebuzz', ->
 
 		it '"CoffeeBuzz" if a number is divisible by Fifteen', ->
 			expect(coffeebuzz.says(15)).to.equal "CoffeeBuzz"
+
+		it 'returns the number if it is not divisible by any of the above', ->
+			expect(coffeebuzz.says(17)).to.equal 17
