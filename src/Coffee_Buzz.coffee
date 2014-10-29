@@ -6,6 +6,8 @@ class Fizzbuzz
 	isDivisibleByFive: (number) ->
 		number % 5 == 0
 
+	isDivisibleByFifteen: ->
+		true
 
 
 module.exports = Fizzbuzz
