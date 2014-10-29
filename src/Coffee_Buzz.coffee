@@ -3,8 +3,8 @@ class Fizzbuzz
 	isDivisibleByThree: (number) ->
 		number % 3 == 0
 
-	isDivisibleByFive: () ->
-		true
+	isDivisibleByFive: (number) ->
+		number % 5 == 0
 
 
 

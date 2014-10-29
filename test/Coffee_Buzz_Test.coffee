@@ -13,6 +13,9 @@ describe 'Coffeebuzz', ->
 		it 'Five', ->
 			expect(coffeebuzz.isDivisibleByFive(5)).to.be.true
 
+		it 'Fifteen', ->
+			expect(coffeebuzz.isDivisibleByFiften(15)).to.be.true
+
 	describe 'knows when a number is NOT divisible by', ->
 
 		it 'Three', ->
